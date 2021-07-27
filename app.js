@@ -26,5 +26,5 @@ app.post("/users", (req, res) => {
 })
 
 app.listen(3333, () => {
-  console.log("Servidor Iniciado outra vez")
+  console.log("Server up")
 })
