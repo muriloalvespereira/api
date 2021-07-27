@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/my_database', {
 
 app.use(express.json());
 app.get("/", (req, res) => {
-  return res.json({titulo: "Como criar uma API"})
+  return res.json({titulo: "Method GET working"})
 })
 
 app.post("/users", (req, res) => {
