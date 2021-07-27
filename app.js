@@ -25,6 +25,6 @@ app.post("/users", (req, res) => {
  Users.create(req.body)
 })
 
-app.listen(8080, () => {
+app.listen(3333, () => {
   console.log("Servidor Iniciado outra vez")
 })
