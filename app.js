@@ -1,3 +1,4 @@
+const { response } = require('express');
 const express = require('express');
 const app = express();
 const mongoose = require('mongoose');
@@ -23,6 +24,9 @@ app.get("/", (req, res) => {
 
 app.post("/users", (req, res) => {
  Users.create(req.body)
+ if(res.ok){
+   console.log("Created successfully")
+ }
 })
 
 app.listen(3333, () => {
