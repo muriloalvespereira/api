@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 require("./users")
 const Users = mongoose.model('users')
 
-mongoose.connect('mongodb://localhost/my_database', {
+mongoose.connect('mongodb://localhost:27017/my_database', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useFindAndModify: false,
